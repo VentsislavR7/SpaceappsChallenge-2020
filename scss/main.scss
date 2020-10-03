@@ -1,16 +1,42 @@
 body {
+  margin: 0;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.8);
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav {
   .navbar-brand {
-    color: white !important;
+    color: rgba(255, 255, 255, 0.8) !important;
   }
   ul {
     li {
       a {
-        color: white !important;
+        color: rgba(255, 255, 255, 0.8) !important;
       }
     }
   }
+}
+
+.message-wrapper {
+  margin: 5px;
+  border: 1px solid white;
+  padding: 5px;
+  font-size: 24px;
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.8);
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  transition: 0.2s ease-in-out;
+  padding: 5px;
+  border-color: white;
+}
+
+.card:hover {
+  transform: scale(0.99);
+}
+
+.row {
+  margin: 15px 0;
 }
