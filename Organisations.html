@@ -1,6 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/min/bootstrap.min.css" />
     <link rel="stylesheet" href="css/min/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -72,38 +73,79 @@
         </div>
       </nav>
       <div class="container">
-        <div class="card-deck">
-          <div class="card">
-            <img src="materials/EnarLogo.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">European Network Against Racism</h5>
-              
-              
-              <button type="button" class="btn btn-primary modalButton" data-toggle="modal" data-target="#exampleModalCenter" id="ENAR">
-                More info
-              </button>
-            </div>
+
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-4">Organisations</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
           </div>
-          <div class="card">
-            <img src="materials/BaliFundLogo.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">National Bali Fund Network</h5>
-              <button type="button" class="btn btn-primary modalButton" data-toggle="modal" data-target="#exampleModalCenter" id="NBFN"> 
-                More info
-              </button>
-              
-            </div>
-          </div>
-          <div class="card">
-            <img src="materials/UnitedLogo.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">
-                UNITED for Intercultural Action</h5>
-                <button type="button" class="btn btn-primary modalButton" data-toggle="modal" data-target="#exampleModalCenter" id="United">
+        </div>
+
+        <!-- Cards -->
+        <div class="row">
+          <div  class=" col-12 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="materials/EnarLogo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">European Network Against Racism</h5>
+                
+                
+               
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-primary modalButton" data-toggle="modal" data-target="#exampleModalCenter" id="ENAR"> 
                   More info
                 </button>
+              </div>
+            </div>
+
+          </div>
+          <div  class=" col-12 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="materials/BaliFundLogo.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">National Bail Fund Network</h5>
+                
+                
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-primary modalButton" data-toggle="modal" data-target="#exampleModalCenter" id="NBFN"> 
+                  More info
+                </button>
+              </div>
+            
             </div>
           </div>
+          <div  class=" col-12 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="materials/UnitedLogo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">
+                  UNITED for Intercultural Action</h5>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-primary modalButton" data-toggle="modal" data-target="#exampleModalCenter" id="United"> 
+                  More info
+                </button>
+              </div>
+            </div>
+          </div>
+          <div  class=" col-12 col-md-4 col-lg-3">
+            <div class="card">
+              <img src="materials/BMHALogo.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Black Mental Health Alliance</h5>
+              </div>
+              <div class="card-footer">
+                <button type="button" class="btn btn-primary modalButton" data-toggle="modal" data-target="#exampleModalCenter" id="BMHA"> 
+                  More info
+                </button>
+              </div>
+            </div>
+          </div>
+         
         </div>
 
         
@@ -123,7 +165,7 @@
         
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
         
       </div>
     </div>

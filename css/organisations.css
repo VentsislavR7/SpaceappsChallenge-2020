@@ -1,3 +1,10 @@
+
+.card
+{
+    margin-bottom: 20px;
+    
+    
+}
 .modal-content
 {
     background-color: rgb(39, 39, 39);
@@ -6,3 +13,45 @@
 
 }
 
+
+.btn-primary
+{
+    background-color: rgb(56, 56, 56);
+    border: 1px solid white;
+    
+}
+
+.btn-primary:hover
+{
+    background-color: rgb(104, 103, 103) !important;
+    border: 1px solid white;
+}
+.btn-primary:focus, .btn-primary:active
+{
+    
+    background-color: rgb(165, 164, 164) !important;
+    outline: none !important ;
+    box-shadow: none !important;
+    border: 1px solid white !important;
+    
+}
+
+@media only screen and (min-width: 768px) 
+{
+    .card
+    {
+        height: 400;
+        
+        
+    }
+}
+
+@media only screen and (min-width: 1200px) 
+{
+    .card
+    {
+        height: 420;
+        
+        
+    }
+}
