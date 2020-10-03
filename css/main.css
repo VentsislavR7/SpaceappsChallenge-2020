@@ -1,13 +1,11 @@
 body {
-  background: blue;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.scss-test {
-  height: 200px;
+nav .navbar-brand {
+  color: white !important;
 }
 
-.scss-test .cs {
-  width: 200px;
-  height: 200px;
-  background: red;
+nav ul li a {
+  color: white !important;
 }
