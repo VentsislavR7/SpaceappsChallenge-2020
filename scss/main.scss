@@ -1,3 +1,6 @@
+// $blue-color: #7bb5e6;
+$blue-color: #a6fa84;
+
 body {
   margin: 0;
   padding: 0;
@@ -19,11 +22,16 @@ nav {
       }
     }
 
+    li:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      transition: 0.3s ease-in-out;
+    }
+
     .active {
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid $blue-color;
 
       a {
-        color: white !important;
+        color: $blue-color !important;
       }
     }
   }
@@ -40,10 +48,15 @@ nav {
 .card {
   background-color: rgba(0, 0, 0, 0.4) !important;
   transition: 0.2s ease-in-out;
-  padding: 5px;
+  //padding: 5px;
   margin: 5px 0;
-  border-color: white;
+  //border-color: white;
   min-height: 420px;
+
+  .card-title {
+    color: $blue-color;
+    text-align: center;
+  }
 
   .card-img-top {
     min-height: 150px;
@@ -51,7 +64,8 @@ nav {
 }
 
 .card:hover {
-  transform: scale(0.99);
+  //transform: scale(0.99);
+  color: $blue-color;
 }
 
 .row {
@@ -62,6 +76,10 @@ nav {
   background-color: transparent;
   padding: 0;
   margin: 0;
+
+  .display-5 {
+    color: $blue-color;
+  }
 }
 
 q {
@@ -75,6 +93,8 @@ q {
 }
 
 .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.3);
+
   p {
     color: white;
     text-shadow: 0px 0px 3px black;

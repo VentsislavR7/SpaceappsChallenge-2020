@@ -18,12 +18,18 @@ nav ul li a {
   color: rgba(255, 255, 255, 0.8) !important;
 }
 
+nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 nav ul .active {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #a6fa84;
 }
 
 nav ul .active a {
-  color: white !important;
+  color: #a6fa84 !important;
 }
 
 .message-wrapper {
@@ -32,17 +38,20 @@ nav ul .active a {
   padding: 5px;
   font-size: 24px;
   -webkit-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.8);
+          box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.8);
 }
 
 .card {
   background-color: rgba(0, 0, 0, 0.4) !important;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
-  padding: 5px;
   margin: 5px 0;
-  border-color: white;
   min-height: 420px;
+}
+
+.card .card-title {
+  color: #a6fa84;
+  text-align: center;
 }
 
 .card .card-img-top {
@@ -50,8 +59,7 @@ nav ul .active a {
 }
 
 .card:hover {
-  -webkit-transform: scale(0.99);
-  transform: scale(0.99);
+  color: #a6fa84;
 }
 
 .row {
@@ -64,6 +72,10 @@ nav ul .active a {
   margin: 0;
 }
 
+.jumbotron .display-5 {
+  color: #a6fa84;
+}
+
 q {
   font-style: italic;
 }
@@ -72,6 +84,10 @@ q {
   background: no-repeat center center scroll;
   background-size: cover;
   min-height: 300px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .carousel-caption p {

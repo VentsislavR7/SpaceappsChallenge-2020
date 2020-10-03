@@ -6,10 +6,6 @@
   min-height: 600px;
 }
 
-.card:hover {
-  color: lightblue;
-}
-
 .card-title {
   text-align: center;
   font-size: 1.7em;
