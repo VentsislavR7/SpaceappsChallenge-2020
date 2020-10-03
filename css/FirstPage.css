@@ -1,40 +1,36 @@
-body {
-    background-color: #151313 !important;
-}
-
 .card-img-top {
-    height: 30vh;
+  height: 30vh;
 }
 
 .card {
-    height: 100%;
+  min-height: 600px;
 }
 
 .card:hover {
-    color: lightblue;
+  color: lightblue;
 }
 
 .card-title {
-    text-align: center;
-    font-size: 1.7em;
+  text-align: center;
+  font-size: 1.7em;
 }
 
 .card-text {
-    text-align: center;
-    font-size: 1.1em;
+  text-align: center;
+  font-size: 1.1em;
 }
 
 .message {
-    text-align: center;
-    font-size: 1.58em;
-    /*font-style: italic;*/
-    width: 80%;
-    margin-left: 10%;
-    font-weight: 300;
+  text-align: center;
+  font-size: 1.58em;
+  /*font-style: italic;*/
+  width: 80%;
+  margin-left: 10%;
+  font-weight: 300;
 }
 
 .headText {
-    text-align: center;
-    font-size: 2.7em;
-    font-weight: 300;
+  text-align: center;
+  font-size: 2.7em;
+  font-weight: 300;
 }
