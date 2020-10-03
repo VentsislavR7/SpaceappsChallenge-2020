@@ -1,5 +1,13 @@
-.my-div {
-    width: 100px;
-    height: 100px;
-    background-color: green;
+body {
+  background: blue;
+}
+
+.scss-test {
+  height: 200px;
+}
+
+.scss-test .cs {
+  width: 200px;
+  height: 200px;
+  background: red;
 }
