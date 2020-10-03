@@ -1,18 +1,14 @@
-
-.media
-{
-    background-color: rgb(77, 77, 77);
-    padding: 10;
-    margin: 10px;
+.media {
+  background-color: rgb(77, 77, 77);
+  padding: 10;
+  margin: 10px;
 }
 
-img
-{
-    width: 64;
+img {
+  width: 64;
 }
 
-a, a:hover
-{
-    color: white;
-    
+a,
+a:hover {
+  color: white;
 }

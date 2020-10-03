@@ -102,3 +102,34 @@ q {
     font-size: 24px;
   }
 }
+
+.mt-0 {
+  color: $blue-color;
+}
+
+.media {
+  q {
+    display: block;
+  }
+
+  a {
+    float: right;
+    display: flex;
+    width: 120px;
+    align-items: center;
+    justify-content: space-around;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    margin-top: 1rem;
+  }
+
+  a:hover {
+    color: $blue-color !important;
+    text-decoration: none;
+    border-bottom: 1px solid $blue-color;
+  }
+
+  a:visited {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}

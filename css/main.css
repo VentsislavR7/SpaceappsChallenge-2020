@@ -96,3 +96,37 @@ q {
   margin: 0;
   font-size: 24px;
 }
+
+.mt-0 {
+  color: #7bb5e6;
+}
+
+.media q {
+  display: block;
+}
+
+.media a {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 120px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  margin-top: 1rem;
+}
+
+.media a:hover {
+  color: #7bb5e6 !important;
+  text-decoration: none;
+  border-bottom: 1px solid #7bb5e6;
+}
+
+.media a:visited {
+  color: rgba(255, 255, 255, 0.8);
+}
