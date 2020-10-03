@@ -1,32 +1,38 @@
 .card-img-top {
-  height: 30vh;
-}
-
-.card {
-  min-height: 600px;
-}
-
-.card-title {
-  text-align: center;
-  font-size: 1.7em;
-}
-
-.card-text {
-  text-align: center;
-  font-size: 1.1em;
-}
-
-.message {
-  text-align: center;
-  font-size: 1.58em;
-  /*font-style: italic;*/
-  width: 80%;
-  margin-left: 10%;
-  font-weight: 300;
-}
-
-.headText {
-  text-align: center;
-  font-size: 2.7em;
-  font-weight: 300;
-}
+    height: 30vh;
+  }
+  
+  .card {
+    min-height: 37em; /* it was 600px before I changed it to 37em */
+    margin-top: 1%;
+  }
+  
+  .card:hover {
+    transition: 0.2s ease-in-out;
+    color: lightblue;
+  }
+  
+  .card-title {
+    text-align: center;
+    font-size: 1.7em;
+  }
+  
+  .card-text {
+    text-align: center;
+    font-size: 1.1em;
+  }
+  
+  .message {
+    text-align: center;
+    font-size: 1.58em;
+    /*font-style: italic;*/
+    width: 80%;
+    margin-left: 10%;
+    font-weight: 300;
+  }
+  
+  .headText {
+    text-align: center;
+    font-size: 2.7em;
+    font-weight: 300;
+  }
