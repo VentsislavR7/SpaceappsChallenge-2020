@@ -1,16 +1,17 @@
 $blue-color: #7bb5e6;
+$white-color: rgba(255, 255, 255, 0.8);
 //$blue-color: #a6fa84;
 
 body {
   margin: 0;
   padding: 0;
-  color: rgba(255, 255, 255, 0.8);
+  color: $white-color;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav {
   .navbar-brand {
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: $white-color !important;
   }
   ul {
     li {
@@ -18,7 +19,7 @@ nav {
       font-size: 20px;
 
       a {
-        color: rgba(255, 255, 255, 0.8) !important;
+        color: $white-color !important;
       }
     }
 
@@ -42,7 +43,7 @@ nav {
   border: 1px solid white;
   padding: 5px;
   font-size: 24px;
-  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 5px 5px$white-color;
 }
 
 .card {
@@ -118,8 +119,8 @@ q {
     width: 120px;
     align-items: center;
     justify-content: space-around;
-    color: rgba(255, 255, 255, 0.8);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    color: $white-color;
+    border-bottom: 1px solid$white-color;
     margin-top: 1rem;
   }
 
@@ -130,6 +131,6 @@ q {
   }
 
   a:visited {
-    color: rgba(255, 255, 255, 0.8);
+    color: $white-color;
   }
 }
