@@ -25,11 +25,11 @@ nav ul li:hover {
 }
 
 nav ul .active {
-  border-bottom: 2px solid #a6fa84;
+  border-bottom: 2px solid #7bb5e6;
 }
 
 nav ul .active a {
-  color: #a6fa84 !important;
+  color: #7bb5e6 !important;
 }
 
 .message-wrapper {
@@ -50,7 +50,7 @@ nav ul .active a {
 }
 
 .card .card-title {
-  color: #a6fa84;
+  color: #7bb5e6;
   text-align: center;
 }
 
@@ -59,7 +59,7 @@ nav ul .active a {
 }
 
 .card:hover {
-  color: #a6fa84;
+  color: #7bb5e6;
 }
 
 .row {
@@ -73,7 +73,7 @@ nav ul .active a {
 }
 
 .jumbotron .display-5 {
-  color: #a6fa84;
+  color: #7bb5e6;
 }
 
 q {
