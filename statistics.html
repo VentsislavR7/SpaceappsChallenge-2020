@@ -97,262 +97,290 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-6" >
+          <div class="chart-provided" style="margin-top: 15px;">
+            <span>Usatoday,USA 2020/06/18</span>
+            <a href="https://eu.usatoday.com/in-depth/news/2020/06/18/12-charts-racial-disparities-persist-across-wealth-health-and-beyond/3201129001/"
+            target="_blank">Full article</a></div>
+          <div id="firstChart" class="chart-container">
+        
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="chart-provided">
+            <span>KFF, 2018</span>
+            <a href="https://eu.usatoday.com/in-depth/news/2020/06/18/12-charts-racial-disparities-persist-across-wealth-health-and-beyond/3201129001/"
+            target="_blank">Full article</a></div>
+          <div id="thirdChart" class="chart-container">
+            
+          </div>
+          <div style="width: 100%; text-align:right;font-style: italic;font-size:12px;">
+            Note: This is only part of the information, full details can be found at the link above.
+          </div>
+        </div>
+      </div>
+      <!-- <script>
+        let data = [
+            [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99],
+            [309,317,322,304,305,317,319,321,317,321,322,329,319,313,313,321,308,308,300,303,313,310,307,305,299,293,287,283,291,285,281,269,276,261,263,274,276,268,255,261,248,239,254,244,237,230,222,233,229,221,222,243,247,233,247,228,229,231,232,235,237,225,195,186,193,186,193,182,182,182,184,159,178,170,173,170,153,151,153,158,145,166,173,178,177,166,177,168,164,153,167,168,182,177,179,167,161,179,182,173],
+            [293,291,281,258,257,265,252,258,242,246,240,242,227,221,227,227,258,241,260,262,254,257,261,246,238,229,233,241,243,248,268,274,277,285,275,280,262,258,263,252,265,270,249,233,242,233,223,215,209,200,210,213,216,224,222,223,230,237,229,241,255,260,259,264,259,246,253,240,240,233,228,237,247,235,238,243,236,240,254,269,259,272,266,258,281,282,280,280,277,277,297,301,310,313,305,306,298,308,317,290],
+        ];
 
-        <div class="col-12" >
-        <div id="mamamudeiba" class="row justify-content-center" style="background-color:white;color: black;overflow-y: hidden; overflow-x: scroll;">
-        <script>
-          let data = [
-              [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99],
-              [309,317,322,304,305,317,319,321,317,321,322,329,319,313,313,321,308,308,300,303,313,310,307,305,299,293,287,283,291,285,281,269,276,261,263,274,276,268,255,261,248,239,254,244,237,230,222,233,229,221,222,243,247,233,247,228,229,231,232,235,237,225,195,186,193,186,193,182,182,182,184,159,178,170,173,170,153,151,153,158,145,166,173,178,177,166,177,168,164,153,167,168,182,177,179,167,161,179,182,173],
-              [293,291,281,258,257,265,252,258,242,246,240,242,227,221,227,227,258,241,260,262,254,257,261,246,238,229,233,241,243,248,268,274,277,285,275,280,262,258,263,252,265,270,249,233,242,233,223,215,209,200,210,213,216,224,222,223,230,237,229,241,255,260,259,264,259,246,253,240,240,233,228,237,247,235,238,243,236,240,254,269,259,272,266,258,281,282,280,280,277,277,297,301,310,313,305,306,298,308,317,290],
-          ];
-
-          const opts = {
-              width: 800,
-              height: 600,
-              title: "Trendlines",
-              scales: {
-                  x: {
-                      time: false,
-                      // snap x-zoom to exact data values
-                      range: (u, min, max) => [
-                          data[0][u.valToIdx(min)],
-                          data[0][u.valToIdx(max)],
-                      ],
-                  },
-              },
-              hooks: {
-                  drawSeries: [
-                      (u, si) => {
-                          let ctx = u.ctx;
-
-                          let s  = u.series[si];
-                          let xd = u.data[0];
-                          let yd = u.data[si];
-
-                          let [i0, i1] = s.idxs;
-
-                          let x0 = u.valToPos(xd[i0], 'x', true);
-                          let y0 = u.valToPos(yd[i0], 'y', true);
-                          let x1 = u.valToPos(xd[i1], 'x', true);
-                          let y1 = u.valToPos(yd[i1], 'y', true);
-
-                          const offset = (s.width % 2) / 2;
-
-                          ctx.translate(offset, offset);
-
-                          ctx.beginPath();
-                          ctx.setLineDash([5, 5]);
-                          ctx.moveTo(x0, y0);
-                          ctx.lineTo(x1, y1);
-                          ctx.stroke();
-
-                          ctx.translate(-offset, -offset);
-                      }
-                  ]
-              },
-              series: [
-                  {},
-                  {
-                      label: "Data 1",
-                      stroke: "red",
-                      fill: "rgba(255,0,0,0.1)",
-                  },
-                  {
-                      label: "Data 2",
-                      stroke: "blue",
-                      fill: "rgba(0,0,255,0.1)",
-                  },
-              ],
-          };
-
-          let u = new uPlot(opts, data, document.getElementById('mamamudeiba'));
-      </script>
-      <script>
-        function seriesBarsPlugin(opts) {
-          const labels   = opts.labels;
-          const barWidth = Math.round(20 * devicePixelRatio);
-          const font     = Math.round(10 * devicePixelRatio) + "px Arial";
-          const margin   = 0.5;
-   
-          function drawThings(u, sidx, i0, i1, draw) {
-            const s       = u.series[sidx];
-            const xdata   = u.data[0];
-            const ydata   = u.data[sidx];
-            const scaleX  = 'x';
-            const scaleY  = s.scale;
-   
-            const totalWidth = (u.series.length - 1) * barWidth;		//.show
-            const offs	     = (sidx-1) * barWidth;
-   
-            for (let i = i0; i <= i1; i++) {
-              let x0 = Math.round(u.valToPos(xdata[i], scaleX, true));
-              let y0 = Math.round(u.valToPos(ydata[i], scaleY, true));
-   
-              draw(i, x0, y0, offs, totalWidth);
-            }
-          }
-   
-          function drawBars(u, sidx, i0, i1) {
-            const scaleY  = u.series[sidx].scale;
-            const zeroY = Math.round(u.valToPos(0, scaleY, true));
-            const fill = new Path2D();
-   
-            drawThings(u, sidx, i0, i1, (i, x0, y0, offs, totalWidth) => {
-              fill.rect(
-                x0 - totalWidth/2 + offs,
-                y0,
-                barWidth,
-                zeroY-y0
-              );
-            });
-   
-            return {fill};
-          }
-   
-          function drawPoints(u, sidx, i0, i1) {
-            u.ctx.font = font;
-            u.ctx.textAlign = "center";
-            u.ctx.textBaseline = "bottom";
-            u.ctx.fillStyle = "black";
-   
-            drawThings(u, sidx, i0, i1, (i, x0, y0, offs, totalWidth) => {
-              u.ctx.fillText(
-                u.data[sidx][i],
-                x0 - totalWidth/2 + offs + barWidth/2,
-                y0
-              );
-            });
-          }
-   
-          function range(u, dataMin, dataMax) {
-            let [min, max] = uPlot.rangeNum(0, dataMax, 0.05, true);
-            return [0, max];
-          }
-   
-          return {
-            opts: (u, opts) => {
-              uPlot.assign(opts, {
-                cursor: {show: false},
-                select: {show: false},
-                scales: {
-                  x: {
-                    time: false,
-                    range: u => [
-                      u.data[0][0]                    - margin,
-                      u.data[0][u.data[0].length - 1] + margin,
-                    ],
-                  },
-                  rend: {range},
-                  size: {range},
-                  mem:  {range},
-                  inter:{range},
-                  toggle:{range},
-                }
-              });
-   
-              uPlot.assign(opts.axes[0], {
-                splits:     () => u.data[0],
-                values:     () => labels(),
-                gap:        5,
-                size:       40,
-                labelSize:  20,
-                grid:       {show: false},
-                ticks:      {show: false},
-              });
-   
-              opts.series.forEach((s, i) => {
-                if (i > 0) {
-                  uPlot.assign(s, {
-                    width: 0,
-                    paths: drawBars,
-                    points: {
-                      show: drawPoints
-                    }
-                  });
-                }
-              });
-            }
-          };
-        }
-   
-        fetch("../bench/results.json").then(r => r.json()).then(d => {
-          const opts = {
+        const opts = {
             width: 800,
             height: 600,
-            title: "Line Charts (166,650 points)",
-            axes: [
-              {
-                grid: {show: false},
-              //	rotate: -45,
-              },
-              {
-                show: false,
-              },
-            ],
-            gutters: {
-              x: false,
+            title: "Trendlines",
+            scales: {
+                x: {
+                    time: false,
+                    // snap x-zoom to exact data values
+                    range: (u, min, max) => [
+                        data[0][u.valToIdx(min)],
+                        data[0][u.valToIdx(max)],
+                    ],
+                },
+            },
+            hooks: {
+                drawSeries: [
+                    (u, si) => {
+                        let ctx = u.ctx;
+
+                        let s  = u.series[si];
+                        let xd = u.data[0];
+                        let yd = u.data[si];
+
+                        let [i0, i1] = s.idxs;
+
+                        let x0 = u.valToPos(xd[i0], 'x', true);
+                        let y0 = u.valToPos(yd[i0], 'y', true);
+                        let x1 = u.valToPos(xd[i1], 'x', true);
+                        let y1 = u.valToPos(yd[i1], 'y', true);
+
+                        const offset = (s.width % 2) / 2;
+
+                        ctx.translate(offset, offset);
+
+                        ctx.beginPath();
+                        ctx.setLineDash([5, 5]);
+                        ctx.moveTo(x0, y0);
+                        ctx.lineTo(x1, y1);
+                        ctx.stroke();
+
+                        ctx.translate(-offset, -offset);
+                    }
+                ]
             },
             series: [
-              {},
-              {
-                label: "White",
-                fill: "#f760be",
-                scale: 'size',
-              },
-              {
-                label:	"Black",
-                fill: "#000000",
-                scale: 'mem',
-              },
-              {
-                label:	"Other",
-                fill: "#BB1133",
-                scale: 'mem',
-              }
+                {},
+                {
+                    label: "Data 1",
+                    stroke: "red",
+                    fill: "rgba(255,0,0,0.1)",
+                },
+                {
+                    label: "Data 2",
+                    stroke: "blue",
+                    fill: "rgba(0,0,255,0.1)",
+                },
             ],
-            plugins: [
-              seriesBarsPlugin({
-                labels: () => d.filter((lib, i) => enabled[i]).map(lib => lib[0]),
-              }),
-            ],
-          };
-   
-          const body = document.body;
-   
-          const enabled = Array(d.length).fill(true);
-   
-          function makeData() {
-            return [
-              d.filter((lib, i) => enabled[i]).map((lib, i) => i+1),
-              d.filter((lib, i) => enabled[i]).map(lib => lib[1]),
-              d.filter((lib, i) => enabled[i]).map(lib => lib[3].reduce((total, num) => total + num, 0)),
-              d.filter((lib, i) => enabled[i]).map(lib => lib[4][0]),
-              d.filter((lib, i) => enabled[i]).map(lib => lib[4][1]),
-              d.filter((lib, i) => enabled[i]).map(lib => lib[5] && lib[5].reduce((total, num) => total + num, 0)),
-              d.filter((lib, i) => enabled[i]).map(lib => lib[6] && lib[6].reduce((total, num) => total + num, 0)),
-            ];
+        };
+
+        let u = new uPlot(opts, data, document.getElementById('mamamudeiba'));
+    </script> -->
+    <script>
+      function seriesBarsPlugin(opts) {
+        const labels   = opts.labels;
+        const barWidth = Math.round(20 * devicePixelRatio) + 15;
+        const font     = Math.round(10 * devicePixelRatio) + "px Arial";
+        const margin   = 1;
+ 
+        function drawThings(u, sidx, i0, i1, draw) {
+          const s       = u.series[sidx];
+          const xdata   = u.data[0];
+          const ydata   = u.data[sidx];
+          const scaleX  = 'x';
+          const scaleY  = s.scale;
+          
+          const totalWidth = (u.series.length - 1) * barWidth;		//.show
+          const offs	     = (sidx-1) * barWidth;
+ 
+          for (let i = i0; i <= i1; i++) {
+            let x0 = Math.round(u.valToPos(xdata[i], scaleX, true));
+            let y0 = Math.round(u.valToPos(ydata[i], scaleY, true));
+ 
+            draw(i, x0, y0, offs, totalWidth);
           }
-   
-          let u = new uPlot(opts, makeData(), document.getElementById('mamamudeiba'));
-   
-          d.forEach((lib, i) => {
-            let btn = document.createElement("button");
-            btn.textContent = lib[0];
-   
-            btn.onclick = e => {
-              enabled[i] = !enabled[i];
-              btn.classList.toggle("hide");
-              u.setData(makeData());
-            };
-   
-            body.appendChild(btn);
+        }
+ 
+        function drawBars(u, sidx, i0, i1) {
+          const scaleY  = u.series[sidx].scale;
+          const zeroY = Math.round(u.valToPos(0, scaleY, true));
+          const fill = new Path2D();
+ 
+          drawThings(u, sidx, i0, i1, (i, x0, y0, offs, totalWidth) => {
+            fill.rect(
+              (x0)- totalWidth/2 + offs,
+              y0,
+              barWidth,
+              zeroY-y0
+            );
           });
-        });
-      </script>
-      </div>
-    </div>
-      </div>
+ 
+          return {fill};
+        }
+ 
+        function drawPoints(u, sidx, i0, i1) {
+          u.ctx.font = font;
+          u.ctx.textAlign = "center";
+          u.ctx.textBaseline = "bottom";
+          u.ctx.fillStyle = "black";
+ 
+          drawThings(u, sidx, i0, i1, (i, x0, y0, offs, totalWidth) => {
+            u.ctx.fillText(
+              u.data[sidx][i],
+              x0 - totalWidth/2 + offs + barWidth/2,
+              y0
+            );
+          });
+        }
+ 
+        function range(u, dataMin, dataMax) {
+          let [min, max] = uPlot.rangeNum(0, dataMax, 0.05, true);
+          return [0, max];
+        }
+ 
+        return {
+          opts: (u, opts) => {
+            uPlot.assign(opts, {
+              cursor: {show: false},
+              select: {show: false},
+              scales: {
+                x: {
+                  time: false,
+                  range: u => [
+                    u.data[0][0]                    - margin,
+                    u.data[0][u.data[0].length - 1] + margin,
+                  ],
+                },
+                rend: {range},
+                size: {range},
+                mem:  {range},
+                inter:{range},
+                toggle:{range},
+              }
+            });
+ 
+            uPlot.assign(opts.axes[0], {
+              splits:     () => u.data[0],
+              values:     () => labels(),
+              gap:        5,
+              size:       40,
+              labelSize:  20,
+              grid:       {show: false},
+              ticks:      {show: false},
+            });
+ 
+            opts.series.forEach((s, i) => {
+              if (i > 0) {
+                uPlot.assign(s, {
+                  width: 0,
+                  paths: drawBars,
+                  points: {
+                    show: drawPoints
+                  }
+                });
+              }
+            });
+          }
+        };
+      }
+      
+      createAChart = function(path, elementChart, elementButtons,width, height, title, lastLable) {
+      fetch(path).then(r => r.json()).then(d => {
+        const opts = {
+          width: width,
+          height: height,
+          title: title,
+          axes: [
+            {
+              grid: {show: false},
+            //	rotate: -45,
+            },
+            {
+              show: false,
+            },
+          ],
+          gutters: {
+            x: false,
+          },
+          series: [
+            {
+            },
+            {
+              label: "White",
+              fill: "#e6e6e6",
+              scale: 'size',
+            },
+            {
+              label:	"Black",
+              fill: "#000000",
+              scale: 'size',
+            },
+            {
+              label:	lastLable,
+              fill: "#BB1133",
+              scale: 'size',
+            }
+          ],
+          plugins: [
+            seriesBarsPlugin({
+              labels: () => d.filter((lib, i) => enabled[i]).map(lib => lib[0]),
+            }),
+          ],
+        };
+ 
+        const body = elementChart;
+ 
+        const enabled = Array(d.length).fill(true);
+ 
+        function makeData() {
+          return [
+            d.filter((lib, i) => enabled[i]).map((lib, i) => i+1),
+            d.filter((lib, i) => enabled[i]).map(lib => lib[1]),
+            //d.filter((lib, i) => enabled[i]).map(lib => lib[3].reduce((total, num) => total + num, 0)),
+            d.filter((lib, i) => enabled[i]).map(lib => lib[4][0]),
+            d.filter((lib, i) => enabled[i]).map(lib => lib[4][1]),
+            d.filter((lib, i) => enabled[i]).map(lib => lib[5] && lib[5].reduce((total, num) => total + num, 0)),
+            d.filter((lib, i) => enabled[i]).map(lib => lib[6] && lib[6].reduce((total, num) => total + num, 0)),
+          ];
+        }
+ 
+         let u = new uPlot(opts, makeData(), body);
+ 
+        // d.forEach((lib, i) => {
+        //   let btn = document.createElement("button");
+        //   btn.classList.add("btn");
+        //     btn.classList.add("btn-warning");
+        //   btn.textContent = lib[0];
+ 
+        //   btn.onclick = e => {
+        //     enabled[i] = !enabled[i];
+        //     btn.classList.toggle("hide");
+        //     u.setData(makeData());
+        //   };
+ 
+        //   elementButtons.appendChild(btn);
+        // });
+      })}
+
+      createAChart("../charts/firstChart.json", document.getElementById('firstChart'), null, 410, 500, "Megared in %", "U.S. average");
+      //createAChart("../charts/secondChart.json", document.getElementById('secondChart'), null, 410, 500, "", "U.S. average");
+      createAChart("../charts/thirdChart.json", document.getElementById('thirdChart'), null, 1500, 500, "Deaths per 100,000 people", "Other");
+    </script>
     </div>
   </body>
 </html>

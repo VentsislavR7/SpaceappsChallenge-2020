@@ -131,3 +131,45 @@ q {
 .media a:visited {
   color: rgba(255, 255, 255, 0.8);
 }
+
+.uplot {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+.u-legend td {
+  display: none;
+}
+
+.u-series:first-child {
+  display: none;
+}
+
+.chart-provided {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chart-provided a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.chart-provided a:visited {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.chart-provided a:hover {
+  color: #7bb5e6;
+  text-decoration: none;
+  border-bottom: 1px solid #7bb5e6;
+}

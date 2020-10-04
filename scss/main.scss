@@ -135,3 +135,41 @@ q {
     color: $white-color;
   }
 }
+
+.uplot {
+  width: fit-content !important;
+}
+
+.u-legend {
+  td {
+    display: none;
+  }
+}
+
+.u-series:first-child {
+  display: none;
+}
+
+.chart-provided {
+  display:flex;
+  width: 100%;
+  justify-content: space-between;
+
+  a {
+    color: $white-color;
+    text-decoration: none;
+    border-bottom: 1px solid $white-color;
+  }
+
+  a:visited {
+    color: $white-color;
+    text-decoration: none;
+    border-bottom: 1px solid $white-color;
+  }
+
+  a:hover {
+    color: $blue-color;
+    text-decoration: none;
+    border-bottom: 1px solid $blue-color;
+  }
+}
